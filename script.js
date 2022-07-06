@@ -116,5 +116,5 @@ app.get("/getpage", function (request, response){
     run().catch(console.dir);
 });
 const port = 3000 
-app.listen(port);
+app.listen(process.env.PORT || port)
 console.log("Something awesome to happen at http://localhost:"+port);
