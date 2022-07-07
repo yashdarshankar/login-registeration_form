@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Registeration Form</title>
+    
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+      h6{
+        text-align: center;
+        align-items: center;
+        align-self: center;
+        color: red;
+      }
+      .container{
+        text-align: center;
+        margin-top: 20px;
+        width: 400px;
+        height: 500px;
+        padding: 2px;
+        background-color: lightgray;
+        
+      }
+      .container1{
+        text-align: center;
+        margin-top: 100px;
+        width: 400px;
+        height: 750px;
+        padding: 2px;
+        background-color: lightgray;
+        
+      }
+      #username,#password,#usernameregister,#passwordregister,#password1register,#number,#question{
+        width : 350px;
+        margin-left: 25px;
+        
+      }
+ 
+    </style>
+
+  </head>
+<body>
+  <br><br>
+  <h6><b>Note :- </b> sometimes the application get overload, please try to refresh or try after some time.</h6>
+  <div class="container">
+    <br><br>
+    <h4>Login Form</h4>
+    <br><br>
+    <form  method="get|post" action="/getemail">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" aria-describedby="emailHelp" name="username">
+          <div id="emailHelp" class="form-text">Try to make it unique as possible</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="text" class="form-control" id="password" name="password">
+          <div id="emailHelp" class="form-text">Try make combination of different letter,digit,symbols</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        
+
+      </form>
+      <br><br>
+      <div class="container1">
+        <br><br>
+        <h2>signup Form</h2>
+        <br><br>
+        <form  method="get|post" action="/getpage">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Username</label>
+              <input type="text" class="form-control" id="usernameregister" aria-describedby="emailHelp" name="usernameregister">
+              <div id="emailHelp" class="form-text">Try to make it unique as possible</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="text" class="form-control" id="passwordregister" name="passwordregister">
+              <div id="emailHelp" class="form-text">Try make combination of different letter,digit,symbols</div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                <input type="text" class="form-control" id="password1register" name="password1register">
+                <div id="emailHelp" class="form-text">Try make combination of different letter,digit,symbols</div>
+              </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Mobile number</label>
+                <input type="number" class="form-control" id="number" name="number">
+                
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">who is your favourite celebrity ?</label>
+                <input type="text" class="form-control" id="question" name="question">
+                
+              </div>
+              
+            
+            <button type="submit" class="btn btn-primary">Register</button>
+    
+            
+          </form>
+          <br><br>
+
+
+  </div>
+  <br><br><br><br>
+  <br><br><br><br><br><br><br>  <br><br><br><br><br><br><br>
+ 
+        
+</body>
+</html>
